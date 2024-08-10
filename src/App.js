@@ -1,14 +1,17 @@
-import React from 'react';
-import Navber from './Navbar';
+import React, { Fragment } from 'react';
+
+import Navbar from './features/Navbar';
+import Container from './features/Container';
+import Home from './features/Home';
 
 function App() {
   return (
-    <div> 
-      <Navber/> 
-      <h1 style={{ padding: '4rem 0', margin: '0 auto', maxWidth: 1200 }}>
-        Hello React
-      </h1>
-    </div>
+    <Fragment>
+      <Navbar />
+      <Container>
+        <Home />
+      </Container>
+    </Fragment>
   );
 }
 
